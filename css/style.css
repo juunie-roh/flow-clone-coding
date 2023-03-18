@@ -503,9 +503,7 @@ header>.thin>.thin_content>.icon {
 /* fixedBtns end */
 
 /* footer */
-footer {
-  background: var(--bgGray);
-}
+footer { background: var(--bgGray); }
 
 footer>.container__inner {
   display: flex;
@@ -576,21 +574,10 @@ footer ul.social a {
   background-repeat: no-repeat;
 }
 
-footer ul.social a.yt {
-  background-image: url(../images/sns/sns-yt.svg);
-}
-
-footer ul.social a.fb {
-  background-image: url(../images/sns/sns-fb.svg);
-}
-
-footer ul.social a.ins {
-  background-image: url(../images/sns/sns-ins.svg);
-}
-
-footer ul.social a.flw {
-  background-image: url(../images/sns/sns-flw.svg);
-}
+footer ul.social a.yt { background-image: url(../images/sns/sns-yt.svg); }
+footer ul.social a.fb { background-image: url(../images/sns/sns-fb.svg); }
+footer ul.social a.ins { background-image: url(../images/sns/sns-ins.svg); }
+footer ul.social a.flw { background-image: url(../images/sns/sns-flw.svg); }
 
 footer ul.terms {
   margin-top: 30px;
@@ -635,6 +622,14 @@ footer ul.siteMap>li ol>li:hover>a {
 footer ul.siteMap>li ol>li:first-child {
   margin-top: 0;
   cursor: default;
+}
+
+@media screen and (max-width: 1024px) {
+  footer>.container__inner { justify-content: flex-start; }
+  footer ul.siteMap { display: none; }
+  footer ul.address>li>p { display: block; margin: 5px 0; }
+  footer ul.social>li { margin-right: 30px; margin-top: 15px; }
+  footer ul.terms { margin-top: 20px; }
 }
 
 /* footer end */
@@ -1317,20 +1312,15 @@ footer ul.siteMap>li ol>li:first-child {
 }
 
 .saas>.content a { background: #5cbb52; }
-.onPremise>.content a { margin-top: 42px; background: #3aafe1; }
+.onPremise>.content a { margin-top: 40px; background: #3aafe1; }
 
 .saas>.content a:hover,
 .onPremise>.content a:hover {
   text-decoration: underline;
 }
 
-.saas>.content a:hover {
-  background: #34692e;
-}
-
-.onPremise>.content a:hover {
-  background: #246e8e;
-}
+.saas>.content a:hover { background: #34692e; }
+.onPremise>.content a:hover { background: #246e8e; }
 
 @media screen and (min-width: 1441px) {
   .container__service .saas,
@@ -1349,6 +1339,10 @@ footer ul.siteMap>li ol>li:first-child {
   .container__service .onPremise>.content { padding: 20px; }
   .container__service .saas>.content ul li,
   .container__service .onPremise>.content ul li { font-size: 14px; }
+  .container__service .saas>.content ul li:last-child { margin: 1em 0; }
+  .saas>.content a,
+  .onPremise>.content a { padding: 0.5em 2em; }
+  .onPremise>.content a { margin-top: 20px; }
 }
 
 /* service end */
@@ -1472,6 +1466,9 @@ footer ul.siteMap>li ol>li:first-child {
   .container__guide .cardWrap { max-width: none; }
 }
 
+@media screen and (max-width: 1024px) {
+  .container__guide h2 { margin-bottom: 30px; }
+}
 /* guide end */
 
 /* input */

@@ -225,8 +225,8 @@
           TOP5 기능
         </h2>
         <div class="slideFunc">
-          <ul>
-            <li>프로젝트</li>
+          <ul id="slideList">
+            <li class="active">프로젝트</li>
             <li>업무관리</li>
             <li>간트차트</li>
             <li>보안메신저</li>
@@ -238,9 +238,9 @@
             온라인 협업 방식으로 프로젝트 소통을 강화할 수 있습니다.
           </p>
           <div>
-            <p>1</p>
+            <p id="slideNum1">1</p>
             <i></i>
-            <p>2</p>
+            <p id="slideNum2">2</p>
           </div>
           <a href="#" class="activeLink">
             <i></i>
@@ -249,6 +249,7 @@
         </div>
         <img src="./images/gradient-box.png" alt="" class="inline-block absolute">
       </div>
+      <script src="./js/slideFunc.js"></script>
     </section>
     <!-- functions end -->
 
@@ -464,12 +465,86 @@
 
     <section class="container__input">
       <div class="container__inner">
-        <h2>
-          간단한 정보를 기입하고
-          <br>
-          소개서를 다운로드하세요!
-        </h2>
+        <div>
+          <h2>
+            간단한 정보를 기입하고
+            <br>
+            소개서를 다운로드하세요!
+          </h2>
+          <p class="miniText">협업툴을 도입하기 전 플로우 소개서와 비교 자료로 장단점을 한눈에 확인하세요!</p>
+          <img src="./images/flow/flow-guide.png" alt="">
+        </div>
+        <form id="consultForm">
+          <ul class="formList">
+            <li>
+              <label for="companyName">회사명</label>
+              <input type="text" id="companyName" placeholder="회사명" required autocomplete="off">
+            </li>
+            <li>
+              <label for="userName">이름</label>
+              <input type="text" id="userName" placeholder="이름" required autocomplete="off">
+            </li>
+            <li>
+              <label for="tel">전화번호</label>
+              <input type="tel" id="tel" placeholder="전화번호(-제외)" required autocomplete="off">
+            </li>
+            <li>
+              <label for="email">이메일</label>
+              <input type="email" id="email" placeholder="이메일" required autocomplete="off">
+            </li>
+            <li>
+              <select id="requiredNum" required>
+                <option value="">예상 사용 인원을 선택하세요</option>
+                <option value="10">10인 이하</option>
+                <option value="11">11인 이상 30인 이하</option>
+                <option value="31">31인 이상 50인 이하</option>
+                <option value="51">51인 이상 100인 미만</option>
+                <option value="100">100인 이상</option>
+                <option value="500">500인 이상</option>
+                <option value="1000">1000인 이상</option>
+              </select>
+            </li>
+            <li>
+              <select id="sector" required>
+                <option value="">업종을 선택하세요</option>
+                <option value="Produce">제조업</option>
+                <option value="IT">정보통신업(IT)</option>
+                <option value="Franchise">F&B, 프랜차이즈</option>
+                <option value="Logistics">도·소매 유통 판매</option>
+                <option value="Entertain">엔터테인먼트, 여행, 예술</option>
+                <option value="Public">공공 행정</option>
+                <option value="Construct">건설 및 기간 산업</option>
+                <option value="Tax">세무, 법무, 노무</option>
+                <option value="Transportation">운수 및 물류</option>
+                <option value="Medical">의료 보건, 사회 복지</option>
+                <option value="Finance">금융, 보험, 부동산</option>
+                <option value="Association">협회 및 단체</option>
+                <option value="Research">교육 및 연구</option>
+                <option value="Agriculture">1차 산업(농·임·수산업)</option>
+                <option value="etc">기타</option>
+              </select>
+            </li>
+          </ul>
+          <ul class="agreeList">
+            <li>
+              <input type="checkbox" id="privacyAgree" required>
+              <label for="privacyAgree" id="privacyAgreeLabel">
+                <span>[필수]</span>
+                <a href="">개인정보 수집 및 이용</a>에 동의합니다.
+              </label>
+            </li>
+            <li>
+              <input type="checkbox" id="marketingAgree" required>
+              <label for="marketingAgree" id="marketingAgreeLabel">
+                <span>[필수]</span>
+                <a href="">홍보 및 마케팅 수집·이용</a>에 동의합니다.
+              </label>
+            </li>
+          </ul>
+          <input type="submit" id="submitBtn" value="신청하기">
+        </form>
       </div>
+      <script src="./js/form.js"></script>
     </section>
 
     <ul id="fixedBtns">

@@ -7,3 +7,11 @@ sideMenu.addEventListener('click', function() {
   lnbMenu.classList.toggle('on');
   header.classList.toggle('on');
 });
+
+for (let li of lnbMenu.children) {
+  if (li.firstElementChild.tagName === "SPAN") {
+    li.addEventListener('click', function() {
+      li.classList.toggle('active');
+    })
+  }
+}

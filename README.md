@@ -2,7 +2,7 @@
 
 Frontend Clone Coding Project.
 
-Only by HTML and CSS, javascript hasn't applied yet.
+Consists of HTML, CSS, Javascript.
 
 Responsive breakpoints are:
 > to 1024px, from 1025px to 1440px, from 1441px ~

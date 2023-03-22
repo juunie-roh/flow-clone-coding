@@ -1,10 +1,18 @@
 # flow-clone-coding
-
 Frontend Clone Coding Project.
 
-Consists of HTML, CSS, Javascript.
+The original page is [here](https://flow.team/kr/index, "flow KR"), flow-KR.
 
 Responsive breakpoints are:
-> to 1024px, from 1025px to 1440px, from 1441px ~
+> mobile:
+> > under 786px (on progress)
+> >
+> > from 787px to 1024px
+> 
+> pc:
+> > from 1025px to 1440px
+> >
+> > over 1441px
 
-The original page is [here](https://flow.team/kr/index, "flow KR"), flow-KR.
+Active Pages:
+> main page only(index.html)

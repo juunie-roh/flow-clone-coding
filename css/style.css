@@ -414,6 +414,7 @@ header>.thin>.thin_content>.icon {
     padding: 0;
     border: none;
     box-shadow: none;
+    white-space: unset;
   }
   #lnbSub li { padding: 15px 0; }
   #lnbSub strong { font-weight: 400; padding-left: 10px; }
@@ -876,7 +877,7 @@ footer ul.siteMap>li ol>li:first-child {
 
 @media screen and (max-width: 768px) {
   .list-wrap { overflow-x: scroll; }
-  #slideList { min-width: 480px; overflow-x: scroll; }
+  #slideList { min-width: 460px; overflow-x: scroll; }
 }
 
 /* functions end */
@@ -1181,10 +1182,16 @@ footer ul.siteMap>li ol>li:first-child {
   display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between;
   height: 1000px;
   max-width: 640px;
+  overflow: hidden;
+  overflow-x: scroll;
   margin: 0 auto;
 }
 
-.cardWrap>.card {
+.cardWrap>ul {
+  display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between;
+}
+
+.cardWrap .card {
   position: relative;
   overflow: visible;
   width: 50%; height: 340px;
@@ -1192,7 +1199,7 @@ footer ul.siteMap>li ol>li:first-child {
   z-index: 0;
 }
 
-.cardWrap>.card>a {
+.cardWrap .card>a {
   position: relative;
   display: inline-block;
   width: 100%; height: 100%;
@@ -1206,7 +1213,7 @@ footer ul.siteMap>li ol>li:first-child {
   transition-duration: 0.3s;
 }
 
-.cardWrap>.card>.card_bg {
+.cardWrap .card>.card_bg {
   content: '';
   position: absolute; right: -46px; top: 106px;
   display: inline-block;
@@ -1265,10 +1272,10 @@ footer ul.siteMap>li ol>li:first-child {
 .card3>a>i { background: url(../images/flow/flow-check03.svg) no-repeat center center / contain; }
 .card4>a>i { background: url(../images/flow/flow-check04.svg) no-repeat center center / contain; }
 
-.cardWrap>.card:hover>a { border: 1px solid var(--mainColor); box-shadow: 20px 20px 44px rgb(0 0 0 / 30%); }
-.cardWrap>.card:hover>a>b { color: var(--mainColor); text-decoration: underline; }
-.cardWrap>.card:hover>.card_bg { background: var(--mainColor); }
-.cardWrap>.card:hover>.card_bg>span { color: #fff; }
+.cardWrap .card:hover>a { border: 1px solid var(--mainColor); box-shadow: 20px 20px 44px rgb(0 0 0 / 30%); }
+.cardWrap .card:hover>a>b { color: var(--mainColor); text-decoration: underline; }
+.cardWrap .card:hover>.card_bg { background: var(--mainColor); }
+.cardWrap .card:hover>.card_bg>span { color: #fff; }
 
 @media screen and (min-width: 1441px) {
   .cardWrap { max-width: none; height: 600px; }
@@ -1276,6 +1283,16 @@ footer ul.siteMap>li ol>li:first-child {
 
 @media screen and (max-width: 1024px) {
   .container__guide h2 { margin-bottom: 30px; }
+  .cardWrap { max-width: 100%; height: 340px; }
+  .cardWrap>ul { flex-wrap: nowrap; min-width: 910px; margin: 30px auto 0; padding: 0 30px 60px; overflow-x: scroll; }
+  .cardWrap .card { width: 150px; height: 204px; }
+  .cardWrap .card>.card_bg { right: -28px; top: 50px; width: 210px; height: 212px; }
+  .card>a>p { padding: 9px 0 20px 9px; }
+  .card>a>p::before { width: 15px; height: 15px; }
+  .card>a>p>span { right: 8px; top: 9px; width: 3px; height: 23px; background-size: contain; }
+  .card>a>b { font-size: 14px; line-height: 21px; }
+  .card>a>i { width: 106px; height: 88px; }
+  .card>.card_bg>span { font-size: 14px; left: 33px; bottom: 26px; }
 }
 /* guide end */
 

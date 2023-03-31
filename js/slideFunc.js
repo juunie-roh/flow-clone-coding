@@ -2,6 +2,7 @@ const slideList = document.querySelectorAll("#slideList li");
 const slideNum1 = document.getElementById("slideNum1");
 const slideNum2 = document.getElementById("slideNum2");
 const containerFunctions = document.querySelector(".container__functions");
+const progressbar = document.querySelector(".slideFunc i.progressbar");
 
 const bgUrlList = [
   "./images/main/main-function1.png",
@@ -15,6 +16,7 @@ let slideTimer = setInterval(slideTimerHandler, 5000);
 
 function slideTimerHandler() {
   const currentList = document.querySelector("#slideList li.active");
+  progressbar.classList.remove('active');
 
   let nextList;
   if (currentList === slideList[slideList.length - 1]) {
@@ -38,10 +40,13 @@ function slideTimerHandler() {
   }
 
   containerFunctions.style.backgroundImage = `url(${bgUrlList[parseInt(slideNum1.innerText) - 1]})`;
+  progressbar.classList.add('active');
 }
 
 slideList.forEach(function (list, index) {
   list.addEventListener('click', function () {
+    // progressbar.classList.remove('active');
+    // console.log("on click start: " + progressbar.classList);
     clearInterval(slideTimer);
 
     for (let li of slideList) {
@@ -57,5 +62,7 @@ slideList.forEach(function (list, index) {
     }
     
     slideTimer = setInterval(slideTimerHandler, 5000);
+    // progressbar.classList.add('active');
+    // console.log("on click end: " + progressbar.classList);
   })
 });

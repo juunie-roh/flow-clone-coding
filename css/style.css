@@ -830,7 +830,7 @@ footer ul.siteMap>li ol>li:first-child {
   width: 80%; height: 1px;
   background: #ddd;
 }
-.slideFunc i.progressbar.progress::after {
+.slideFunc i.progressbar.active::after {
   content: '';
   position: absolute;
   left: 0; top: 0;

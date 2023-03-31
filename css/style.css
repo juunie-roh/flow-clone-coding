@@ -816,16 +816,16 @@ footer ul.siteMap>li ol>li:first-child {
   line-height: 1.8;
   margin-bottom: 30px;
 }
-.slideFunc>div:nth-child(2) {
+.slideFunc .slideProgress {
   display: flex; justify-content: space-between; align-items: center;
   width: 24%;
   margin-bottom: 60px;
 }
-.slideFunc>div:nth-child(2)>p {
+.slideFunc .slideProgress p {
   font-size: 14px;
   font-weight: 900;
 }
-.slideFunc>div:nth-child(2)>i {
+.slideFunc i.progressbar {
   width: 80%; height: 1px;
   background: #ddd;
 }

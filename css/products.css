@@ -15,3 +15,15 @@
   --bgGray: #faf9f9;
   --bgEee: #eee;
 }
+
+.container__product {
+  position: relative;
+  height: 900px;
+}
+
+.container__product .container__inner {
+  position: relative;
+  display: flex;
+  justify-content: space-between; align-items: center;
+  height: 100%;
+}

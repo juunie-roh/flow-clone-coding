@@ -61,7 +61,7 @@
 
 .container__banner .img-wrap {
   position: absolute;
-  right: -46%;
+  top: -30px; right: -46%;
   width: calc(100% - 100px);
   text-align: center;
 }

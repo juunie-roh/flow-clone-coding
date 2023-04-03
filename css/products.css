@@ -16,35 +16,35 @@
   --bgEee: #eee;
 }
 
-.project-banner {
+.container__banner {
   position: relative;
   height: 900px;
   margin-top: 130px;
 }
 
-.project-banner .container__inner {
+.container__banner .container__inner {
   position: relative;
   display: flex;
   justify-content: space-between; align-items: center;
   height: 100%;
 }
 
-.project-banner .text-wrap {
+.container__banner .text-wrap {
   width: 100%;
 }
 
-.project-banner h2.text-title {
+.container__banner h2.text-title {
   width: 100%;
   margin-bottom: 20px;
   font-size: 60px;
   line-height: 1.2;
 }
 
-.project-banner p.text-sub-title {
+.container__banner p.text-sub-title {
   margin-bottom: 20px;
 }
 
-.project-banner a {
+.container__banner a {
   display: inline-block;
   background-color: var(--mainColor);
   width: 180px;
@@ -54,12 +54,12 @@
   font-size: 16px;
   font-weight: 700;
 }
-.project-banner a:hover {
+.container__banner a:hover {
   background-color: var(--holdColor);
   text-decoration: underline;
 }
 
-.project-banner .img-wrap {
+.container__banner .img-wrap {
   position: absolute;
   right: -46%;
   width: calc(100% - 100px);

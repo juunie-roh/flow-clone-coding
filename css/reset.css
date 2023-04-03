@@ -13,11 +13,10 @@
   color: #333;
 }
 
-a {
-  text-decoration: none;
-}
+a { text-decoration: none; }
 
 ol,
-ul {
-  list-style: none;
-}
+ul { list-style: none; }
+
+html,
+body { scroll-behavior: smooth; }

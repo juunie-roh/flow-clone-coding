@@ -17,11 +17,6 @@
 }
 
 /* __COMMON__ */
-html,
-body {
-  scroll-behavior: smooth;
-}
-
 h2 {
   font-size: 40px;
   line-height: 1.4em;

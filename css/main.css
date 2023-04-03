@@ -369,6 +369,10 @@ header>.thin>.thin_content>.icon {
 #sideMenu.active .bar02 { transform: scale(0); }
 #sideMenu.active .bar03 { transform: translateY(-7.5px) rotate(-45deg); }
 
+@media screen and (min-width: 1441px) {
+  header .container__inner { max-width: unset; }
+}
+
 @media screen and (max-width: 1024px) {
   header { height: 100px; }
   header.on { height: 100vh; overflow-y: scroll; }
@@ -489,7 +493,7 @@ header>.thin>.thin_content>.icon {
 footer { background: var(--bgGray); }
 footer>.container__inner {
   position: relative;
-  display: flex; justify-content: space-around;
+  display: flex; justify-content: space-between;
   padding: 50px;
 }
 
@@ -568,6 +572,10 @@ footer ul.siteMap>li ol>li:hover>a {
 footer ul.siteMap>li ol>li:first-child {
   margin-top: 0;
   cursor: default;
+}
+
+@media screen and (min-width: 1441px) {
+  footer>.container__inner { max-width: unset; }
 }
 
 @media screen and (max-width: 1024px) {

@@ -95,6 +95,7 @@ article:nth-child(odd) .contents-wrap { flex-direction: row-reverse; }
   left: -145px; right: auto;
   width: 100%; height: 100%;
 }
+.contents-wrap .img-wrap img { width: 100%; }
 article:nth-child(odd) .contents-wrap .img-wrap {
   left: auto; right: -160px;
 }

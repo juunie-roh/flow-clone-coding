@@ -16,8 +16,17 @@
   --bgEee: #eee;
 }
 
+.container__inner {
+  position: relative;
+  height: 100%;
+  max-width: 1304px;
+  padding: 0 50px;
+  margin: 0 auto;
+}
+
 .container__banner {
   position: relative;
+  display: block;
   height: 900px;
   margin-top: 130px;
 }
@@ -61,7 +70,59 @@
 
 .container__banner .img-wrap {
   position: absolute;
-  top: -30px; right: -46%;
+  top: -30px; right: -50%;
   width: calc(100% - 100px);
   text-align: center;
+}
+/* container__banner (content-0) end */
+
+article { 
+  position: relative;
+  display: block;
+  width: 100%; height: 650px;
+  overflow: hidden;
+}
+article:nth-child(odd) { background: #fff; }
+article:nth-child(even) { background: var(--bgGray); }
+.contents-wrap {
+  display: flex; flex-direction: row;
+  justify-content: space-between; align-items: center;
+  width: 100%; height: 100%;
+}
+article:nth-child(odd) .contents-wrap { flex-direction: row-reverse; }
+.contents-wrap .img-wrap {
+  position: relative;
+  left: -145px; right: auto;
+  width: 100%; height: 100%;
+}
+article:nth-child(odd) .contents-wrap .img-wrap {
+  left: auto; right: -160px;
+}
+.contents-wrap .text-wrap {
+  width: 50%;
+}
+.contents-wrap .text-wrap h2.text-title {
+  margin-bottom: 20px;
+  font-size: 30px;
+  line-height: 44px;
+}
+
+.container__businessBanner {
+  background: url(../images/businessBanner.jpg) no-repeat center center / cover;
+}
+.container__businessBanner .cover {
+  position: relative;
+  top: -76px;
+  width: 100%; height: 400px;
+  padding: 76px 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+.flow-symbols { margin: 0; }
+.container__businessBanner .text p.text-subtitle {
+  text-align: left;
+  font-weight: 500;
+}
+.container__businessBanner .text a {
+  display: block;
+  text-align: left;
 }

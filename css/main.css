@@ -282,6 +282,29 @@ header>.thin>.thin_content>.icon {
   text-decoration: none;
 }
 #lnbMenu .lnb-mobile { display: none; }
+#lnbMenu .lnb-mobile.footer {
+  position: fixed;
+  left: 0; bottom: 0;
+  z-index: 99;
+  display: none;
+  justify-content: space-around; align-items: center;
+  width: 100%; height: 55px;
+  padding: 0;
+  background: #ebeaf1;
+}
+#lnbMenu .lnb-mobile.footer a {
+  display: inline-block;
+  width: 43%;
+  color: #555;
+  font-size: 13px;
+  font-weight: 500;
+  text-align: center;
+}
+#lnbMenu .lnb-mobile.footer i {
+  display: inline-block;
+  width: 1px; height: 15px;
+  background: #ccc;
+}
 
 #lnbSub {
   position: absolute;
@@ -414,6 +437,7 @@ header>.thin>.thin_content>.icon {
   #lnbMenu.on>li { padding: 22px 0; width: 100%; border-bottom: 1px solid var(--bgEee); }
   #lnbMenu.on .lnb-pc { display: none; }
   #lnbMenu.on .lnb-mobile { display: block; }
+  #lnbMenu.on .lnb-mobile.footer { display: flex; }
   #lnbMenu.on>li>span,
   #lnbMenu.on>li>a,
   #lnbSub strong { font-size: 18px; }

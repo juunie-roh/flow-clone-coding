@@ -934,6 +934,7 @@ footer ul.siteMap>li ol>li:first-child {
   .slideFunc>p>br { display: none; }
   .slideFunc>div { display: none; }
   .slideFunc>a { font-size: 12px; }
+  .slideFunc .slideProgress { display: none; }
 }
 
 @media screen and (max-width: 768px) {

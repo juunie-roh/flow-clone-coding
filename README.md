@@ -24,9 +24,9 @@ Active Pages :
 메인 페이지의 소개서 다운로드 부분에서 입력한 정보 처리와 관련한 부분입니다.   
 서버와 연동한 프로젝트가 아니므로 입력한 정보는 브라우저 개발자 도구 Console에 출력하도록 설정되어 있습니다. 아래와 같이 REST API로 처리할 수 있도록 `FormData` 형태로 가공합니다.
 
-> <img src="./images/readme/formdata.png" alt="" width="50%" height=""
+<img src="./images/readme/formdata.png" alt="" width="50%" height=""
      style="border-radius: 10px;
             box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.3);"/>
-> <img src="./images/readme/formdata_console.png" alt="" width="" height=""
+<img src="./images/readme/formdata_console.png" alt="" width="" height=""
      style="border-radius: 10px;
             box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.3);"/>

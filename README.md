@@ -15,5 +15,5 @@ Responsive breakpoints:
 Active Pages:
 > * index.html, 메인 페이지 (main)
 >
-> * pages/project.html, 제품 > 프로젝트 협업 페이지 (product > project)
-> * pages/task.html, 제품 > 업무 관리 페이지 (product > task)
+> * pages/project.html, 제품 > 프로젝트 협업 페이지
+> * pages/task.html, 제품 > 업무 관리 페이지

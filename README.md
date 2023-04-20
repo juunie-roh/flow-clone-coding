@@ -26,7 +26,9 @@ Active Pages :
 
 <img src="./images/readme/formdata.png" alt="" width="50%" height=""
      style="border-radius: 10px;
+            border: 1px solid #000;
             box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.3);"/>
 <img src="./images/readme/formdata_console.png" alt="" width="" height=""
      style="border-radius: 10px;
+            border: 1px solid #000;
             box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.3);"/>

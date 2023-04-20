@@ -4,7 +4,7 @@
 
 Responsive breakpoints :
 > **mobile :**   
-> * under 600px
+> * under 600px (minor changes)
 > * under 786px
 > * from 787px to 1024px
 >    
@@ -26,8 +26,8 @@ Active Pages :
 
 *메인* 페이지의 *소개서 다운로드* 부분에서 입력한 정보 처리와 관련한 부분입니다.   
 
-서버와 연동한 프로젝트가 아니므로 입력한 정보는 브라우저 개발자 도구 Console에 출력하도록 설정되어 있습니다.   
-아래와 같이 REST API로 처리할 수 있도록 `FormData` 형태로 가공합니다.
+서버와 연동한 프로젝트가 아니므로 입력된 정보는 브라우저 개발자 도구 Console에 출력하도록 설정되어 있습니다.   
+이 프로젝트에서는 입력된 정보를 아래와 같이 REST API 등으로 처리할 수 있도록 `FormData` 형태로 가공하여 저장합니다.
 
 <img src="./images/readme/formdata.png" alt="" width="50%" height=""
      style="border-radius: 10px;

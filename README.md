@@ -1,9 +1,11 @@
 # flow-clone-coding
-반응형 웹 디자인 및 js 적용 기본을 목표로 하는 클론 코딩 프로젝트입니다.
+반응형 웹 디자인 및 javascript 적용 기본을 목표로 하는 클론 코딩 프로젝트입니다. [확인하기](https://juunie-roh.github.io/flow-clone-coding/, "flow clone coding")
 
-Github Page로 publish 중 입니다! [확인하기](https://juunie-roh.github.io/flow-clone-coding/)
+Clone coding project for responsive web design and applying javascript. [Check](https://juunie-roh.github.io/flow-clone-coding/)
 
-원본 페이지는 [여기](https://flow.team/kr/index, "flow KR")를 확인하세요.
+원본 페이지는 [여기](https://flow.team/kr/index, "flow KR")에서 확인할 수 있습니다.
+
+Original Page is [here](https://flow.team/kr/index, "flow KR").
 
 Responsive breakpoints:
 > mobile:
@@ -15,7 +17,7 @@ Responsive breakpoints:
 > * over 1441px
 
 Active Pages:
-> * index.html, 메인 페이지
+> * index.html, 메인 페이지 (main)
 >
-> * pages/project.html, 제품 > 프로젝트 협업 페이지
-> * pages/task.html, 제품 > 업무 관리 페이지
+> * pages/project.html, 제품 > 프로젝트 협업 페이지 (product > project)
+> * pages/task.html, 제품 > 업무 관리 페이지 (product > task)

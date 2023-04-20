@@ -4,6 +4,7 @@
 
 Responsive breakpoints :
 > **mobile :**   
+> * under 600px
 > * under 786px
 > * from 787px to 1024px
 >    

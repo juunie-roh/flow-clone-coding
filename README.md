@@ -19,6 +19,7 @@ Active Pages :
 > * pages/task.html, 제품 > 업무 관리 페이지
 > * pages/chatting.html, 제품 > 메신저 페이지
 > * pages/okr-introduction.html, 제품 > OKR 페이지
+> * pages/video.html, 제품 > 화상회의 페이지
 
 ## Features
 

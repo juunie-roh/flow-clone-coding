@@ -20,6 +20,7 @@ Active Pages :
 > * pages/chatting.html, 제품 > 메신저 페이지
 > * pages/okr-introduction.html, 제품 > OKR 페이지
 > * pages/video.html, 제품 > 화상회의 페이지
+> * pages/security.html, 제품 > 보안기능 페이지 (업데이트 중)
 
 ## Features
 

@@ -1379,7 +1379,7 @@ footer ul.siteMap>li ol>li:first-child {
 .formList select {
   display: block;
   width: 600px;
-  padding: 1em 1em;
+  padding: 1em;
   margin: 1em auto;
   border: 1px solid #ddd;
   border-radius: 10px;
